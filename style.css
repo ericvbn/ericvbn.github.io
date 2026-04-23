@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+}
+
+.header {
+    padding: 40px 30px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.school {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact {
+    font-size: 13px;
+    color: #666;
+}
+
+.contact a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 30px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0066cc;
+    display: block;
+    font-weight: bold;
+}
+
+.education p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0;
+}
+
+.skill-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.skill-item:last-child {
+    border-bottom: none;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.skill-level {
+    color: #666;
+    font-size: 13px;
+}
+
+.projects-grid {
+    display: block;
+}
+
+.project-card {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.project-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project-image {
+    display: none;
+}
+
+.project-info {
+    padding: 0;
+}
+
+.project-title {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.project-description {
+    color: #666;
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+.interests-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interest-item {
+    background: #f5f5f5;
+    color: #333;
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #ddd;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+    color: #666;
+    font-size: 12px;
+    border-top: 1px solid #ddd;
+}
+
+.footer a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 20px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 16px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
